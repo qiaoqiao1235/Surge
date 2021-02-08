@@ -9,9 +9,6 @@ force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
 # > 京东  去启动广告
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
 
-# > YouTube 去片头广告
-//URL-REGEX,^https?:\/\/[\w-]+\.googlevideo\.com\/.+&(oad|ctier),REJECT-TINYGIF
-
 # > 知乎 去广告
 //SOME MCN INFO MAY BE USEFUL
 //URL-REGEX,https://www.zhihu.com/api/v4/mcn/,REJECT
@@ -96,4 +93,4 @@ ITHome.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent
 ITHome.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/ITHome.js,type=http-response,pattern=^https?:\/\/api\.ithome\.com\/json\/(newslist|listpage)\/news
 
 [MITM]
-hostname = %APPEND% greasyfork.org, openuserjs.org, 8.8.8.8, 1.1.1.1, api.m.jd.com,*.googlevideo.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, api.rr.tv, *.amemv.com, aweme*.snssdk.com, ios.prod.ftl.netflix.com, editorapi.115.com, biz.caiyunapp.com, ap*.intsig.net, api.ithome.com
+hostname = %APPEND% greasyfork.org, openuserjs.org, 8.8.8.8, 1.1.1.1, api.m.jd.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, mp.weixin.qq.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, api.rr.tv, *.amemv.com, aweme*.snssdk.com, ios.prod.ftl.netflix.com, editorapi.115.com, biz.caiyunapp.com, ap*.intsig.net, api.ithome.com
